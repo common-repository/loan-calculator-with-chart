@@ -1,0 +1,248 @@
+.loan_calc_container {
+	height: auto;
+	width: 700px;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 0px auto;
+/*	background-image: linear-gradient(to bottom left, #e4dfec, white, white);*/
+	background-color: #f0f8ff;
+}
+.loan-calc-sub-container {
+	display: flex;
+	width: 100%;
+	gap: 25px;
+	height: max-content;
+}
+
+.loan_calc_header {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.loan_calc_view,
+.loan_calc_breakup {
+	width: 50%;
+}
+.loan_calc_details input {
+	width: 100%;
+}
+
+.loan-calc-detail {
+	display: flex;
+	justify-content: space-between;
+}
+
+.loan-calc-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*----- Styling the sliders ----*/
+/*.loan_calc_container input[type="range"] {
+	-webkit-appearance: none;
+	margin: 10px 0;
+	width: 100%;
+	padding: 0;
+	height: auto;
+}*/
+
+.loan_calc_container input[type="range"] {
+	-webkit-appearance: none;
+	margin: 10px 0;
+	width: 100%;
+	padding: 0;
+	height: auto;
+	border-radius: 5px;
+	background-color: #ffffff;
+	background-image: linear-gradient(#9088d2, #9088d2);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+
+.loan_calc_container input[type="range"]:focus {
+	outline: none;
+}
+
+.loan_calc_container input[type=range]::-webkit-slider-runnable-track  {
+  	width: 100%;
+	height: 7px;
+	cursor: pointer;
+}
+
+.loan_calc_container input[type="range"]::-webkit-slider-thumb {
+	box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+	border: 5px solid; 
+	border-color: #ffffff;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #9088d2;
+	cursor: pointer;
+	margin-top: -6px;
+	-webkit-appearance: none;
+}
+
+/*.loan_calc_container input[type="range"]:focus::-webkit-slider-runnable-track {
+	background: #b3b3b3;
+}*/
+
+
+
+/*............. new */
+
+
+/* Input Thumb */
+
+/*input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ff4500;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ff4500;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}*/
+
+/*input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ff0200;
+}*/
+
+
+/*.............*/
+
+.loan_calc_container input[type="range"]::-moz-range-track {
+	-webkit-appearance: none;
+	margin: 10px 0;
+	width: 100%;
+	padding: 0;
+	height: auto;
+	border-radius: 5px;
+	background-color: #ffffff;
+	background-image: linear-gradient(#9088d2, #9088d2);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+
+.loan_calc_container input[type="range"]::-moz-range-thumb {
+	box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+	border: 5px solid #ffffff;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #9088d2;
+	cursor: pointer;
+	margin-top: -6px;
+}
+
+.loan_calc_container input[type="range"]::-ms-track {
+	width: 100%;
+	height: 7px;
+	cursor: pointer;
+	background: #9088d2;
+	border-color: transparent;
+	border-width: 16px 0;
+	color: transparent;
+	border-radius: 10px;
+}
+
+.loan_calc_container input[type="range"]::-ms-fill-lower {
+	background: #9088d2;
+	border-radius: 5px;
+}
+
+.loan_calc_container input[type="range"]::-ms-fill-upper {
+	background: #9088d2;
+	border-radius: 5px;
+}
+
+.loan_calc_container input[type="range"]::-ms-thumb {
+	box-shadow: 2px 2px 5px #b3b3b3, -1px -1px 3px grey;
+	border: 5px solid #ffffff;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #9088d2;
+	cursor: pointer;
+	margin-top: -6px;
+}
+
+.loan_calc_container input[type="range"]:focus::-ms-fill-lower {
+	background: #9088d2;
+}
+
+.loan_calc_container input[type="range"]:focus::-ms-fill-upper {
+	background: #9088d2;
+}
+
+/*-------------------------------------*/
+.loan_calc_container #loan-calc-price {
+	color: #130f31;
+	font-size: 25px;
+}
+
+.loan-details {
+	display: flex;
+	justify-content: space-around;
+	gap: 30px;
+	text-align: center;
+}
+
+#loan-calc-price-container {
+	color: #9088d2;
+	margin-top: 50px;
+}
+
+#loan-calc-price-container::before {
+	content: "Monthly Payable:";
+	font-size: 12px;
+	display: block;
+}
+.loan_chart_details{
+	color: #9088D2
+}
+.chart_loan_calc_detail{
+	color: #130F31; 
+	font-size: 17px;
+}
+.loan-detail-text{
+	color: #9088D2;
+	margin-top: 1em;
+    margin-bottom: 1em;
+}
+.loan-calc-text, .loan_calc_header h1{
+	color: #6258A8;
+}
+
+@media only screen and (max-width: 768px) {
+	.loan-calc-sub-container{
+		flex-direction: column;
+	}
+	.loan_calc_view, .loan_calc_breakup {
+	    width: 100%;
+	}
+	.loan_calc_container {
+		width: auto;
+		padding: 12px;
+	}
+	.loan-details {
+		gap: 10px;
+		align-items: center;
+		justify-content: space-around;
+	    flex-wrap: wrap;
+	}
+}
